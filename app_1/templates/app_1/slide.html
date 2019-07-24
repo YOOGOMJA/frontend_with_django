@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+<script src="{% static './bower_components/swiper/dist/js/swiper.js' %}"></script>
+<link rel="stylesheet" href="{% static './bower_components/swiper/dist/css/swiper.css' %}">
+<link rel="stylesheet" href="{% static './APP_1/slide.css' %}">
+
+
+<script src="{% static './app_1/slide.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide bg-success">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class='text-light text-center'>Slide1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide bg-danger">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class='text-light text-center'>Slide2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide bg-info">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class='text-light text-center'>Slide3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide bg-warning">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class='text-light text-center'>Slide4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+{% endblock %}

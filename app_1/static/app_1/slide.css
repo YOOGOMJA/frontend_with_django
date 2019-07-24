@@ -1,0 +1,14 @@
+/* 문서 전체 크기 조절 */
+html , body { width : 100%; height : 100%; }
+
+/* 슬라이드의 세로 크기가 전체를 덮도록 */
+.swiper-container{ height : 100%; }
+.swiper-slide .container,.swiper-slide .row{ height : 100%; }
+
+/* 슬라이드 내의 글씨 크기 */
+.swiper-slide p{
+    font-size : 3em;
+}
+
+/* 슬라이드의 페이지네이션 원의 색 변경 */
+/* .swiper-pagination-bullet-active{ background : orange; } */

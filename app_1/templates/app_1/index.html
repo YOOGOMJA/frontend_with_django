@@ -1,13 +1,253 @@
-{% extends 'base.html' %}
-{% load staticfiles %}
-
-{% block head %}
+{% extends 'base.html' %} {% load staticfiles %} {% block head %}
 <script src="{% static './bower_components/swiper/dist/js/swiper.js' %}"></script>
-<link rel="stylesheet" href="{% static './bower_components/swiper/dist/css/swiper.css' %}">
+<link
+    rel="stylesheet"
+    href="{% static './bower_components/swiper/dist/css/swiper.css' %}"
+/>
 
-<link rel="stylesheet" href="{% static './APP_1/index.css' %}">
-{% endblock %}
+<link rel="stylesheet" href="{% static './APP_1/index.css' %}" />
+<script>
+    function thanks() {
+        alert("말이라도 감사합니다..");
+    }
+</script>
+{% endblock %} {% block body %}
 
-{% block body %}
-<p>APP_1 home</p>
+<!-- 인덱스 내용을 채울 장소 -->
+<div class="index">
+    <div class="header">
+        <div class="header-cover"></div>
+        <!-- 타이틀 내용 -->
+        <div class="header-content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="text-light">Love Salmon</h1>
+                        <div class="text-light mb-3">
+                            <p>
+                                유경수는 연어를 정말 좋아합니다.<br />그럼에도
+                                불구하고 여태 연어를 못먹은거 보면
+                                <br />올해에는 연어랑 연이 없는거 아닌지
+                                모르겠습니다.
+                            </p>
+                        </div>
+                        <button
+                            type="button"
+                            class="btn btn-lg btn-primary"
+                            onclick="thanks()"
+                        >
+                            사주러 가기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content menu mt-5">
+        <div class="container">
+            <div class="title">
+                <h1>Favorite Beverages</h1>
+            </div>
+            <hr />
+            <div class="row mt-5">
+                <div class='col-md-3 mb-5'>
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="card-columns">
+                        <div class="card mb-4 shadow-sm">
+                            <img
+                                src="{% static '/images/beverage1.jpg' %}"
+                                class="card-img-top"
+                                alt=""
+                            />
+                            <div class="card-body">
+                                <p class="card-text">
+                                    사실 무슨 술이든 상관없지만 이왕이면 향도 좋은 사케나 위스키도 죽일거라고 생각합니다. 왜냐면 연어는 기름지니까 .. 기름진 연어 .. 연어 .. 
+                                </p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="btn-group">
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            View
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                            <img
+                                src="{% static '/images/beverage2.jpg' %}"
+                                class="card-img-top"
+                                alt=""
+                            />
+                            <div class="card-body">
+                                <p class="card-text">
+                                    연어 다 죽었다. 생 연어 그대로 슬라이스해서 간장에 찍어먹어야지. 그리고 빨리 냉장고에서 쥰내 차가운 맥주따서 꼴깍꼴깍하면 연어 쌔끼들 나만봐도 오금이 저릴것이다.
+                                </p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="btn-group">
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            View
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                            <img
+                                src="{% static '/images/beverage3.jpg' %}"
+                                class="card-img-top"
+                                alt=""
+                            />
+                            <div class="card-body">
+                                <p class="card-text">
+                                    고상하게 와인이랑 먹어도 맛있겠지. 평소에 안쓰는 커다랗고 흰 접시에다가 스테이크 작살나게 해서 와인이랑 박살내고 싶다.
+                                </p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="btn-group">
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            View
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                            <img
+                                src="{% static '/images/beverage4.jpg' %}"
+                                class="card-img-top"
+                                alt=""
+                            />
+                            <div class="card-body">
+                                <p class="card-text">
+                                    솔직히 연어를 먹는데 칵테일도 안어울릴리가 없다. 달달한 술에 기름진 연어, 다 먹고 행복사하겠습니다.
+                                </p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="btn-group">
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            View
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    배가 고픕니다. 이제 할말도 다 떨어져서 할말은 연어야 나랑 사귀자뿐
+                                </p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="btn-group">
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            View
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow-sm">
+                            <img
+                            src="{% static '/images/beverage5.jpg' %}"
+                            class="card-img-top"
+                            alt=""
+                        />
+                            <div class="card-body">
+                                
+                                <p class="card-text">
+                                        이게 뭔지도 모르겠지만 연어가 맛있으니까 뭐든 가져다가 붙이면 대존맛이지 뭐 여부가 있는지 잘 모르겠습니다.
+                                </p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="btn-group">
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            View
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary"
+                                        >
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

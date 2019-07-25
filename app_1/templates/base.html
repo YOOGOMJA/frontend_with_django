@@ -16,7 +16,53 @@
     {% endblock %}
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Salmon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">I <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">like</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">a salmon</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">seriously</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+              
     {% block body %}
     {% endblock %}
+
+    <script>
+        $(document).ready(function(){
+            console.log($(document).scrollTop());
+            $(document).scroll(function(){
+                // console.log(this , $(document).scrollTop());
+                let doc = $(document);
+                let scrt = doc.scrollTop();
+                if(scrt > 40){
+                    $('.navbar')
+                    .removeClass('navbar-dark')
+                    .addClass('navbar-light')
+                    .addClass('bg-light');
+                }
+                else{
+                    $('.navbar')
+                    .addClass('navbar-dark')
+                    .removeClass('navbar-light')
+                    .removeClass('bg-light');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

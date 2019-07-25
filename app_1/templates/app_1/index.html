@@ -1,10 +1,13 @@
-{% extends 'base.html' %} {% load staticfiles %} {% block head %}
+{% extends 'base.html' %} 
+{% load staticfiles %} 
+{% block head %}
 <script src="{% static './bower_components/swiper/dist/js/swiper.js' %}"></script>
 <link
     rel="stylesheet"
     href="{% static './bower_components/swiper/dist/css/swiper.css' %}"
 />
 
+<link rel="stylesheet" href="{% static './bower_components/fontawesome/css/all.css' %}">
 <link rel="stylesheet" href="{% static './APP_1/index.css' %}" />
 <script>
     function thanks() {
@@ -37,6 +40,7 @@
                             onclick="thanks()"
                         >
                             사주러 가기
+                            <i class="fas fa-coins ml-3"></i>
                         </button>
                     </div>
                 </div>

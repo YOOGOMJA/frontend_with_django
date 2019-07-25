@@ -7,9 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <script src="{% static './bower_components/jquery/dist/jquery.js' %}"></script>
-    <script src="{% static './bower_components/bootstrap/dist/js/bootstrap.min.js' %}" ></script>
-    <link rel="stylesheet" href="{% static './bower_components/bootstrap/dist/css/bootstrap.css' %}">
+    <script 
+        src="{% static './bower_components/jquery/dist/jquery.js' %}">
+    </script>
+    <script 
+        src="{% static './bower_components/bootstrap/dist/js/bootstrap.min.js' %}" >
+    </script>
+    <link 
+        rel="stylesheet" 
+        href="{% static './bower_components/bootstrap/dist/css/bootstrap.css' %}">
     
     {% block head %}
 
@@ -40,6 +46,7 @@
     </nav>
               
     {% block body %}
+    
     {% endblock %}
 
     <script>

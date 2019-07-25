@@ -51,15 +51,11 @@
                 let scrt = doc.scrollTop();
                 if(scrt > 40){
                     $('.navbar')
-                    .removeClass('navbar-dark')
-                    .addClass('navbar-light')
-                    .addClass('bg-light');
+                    .addClass('bg-dark');
                 }
                 else{
                     $('.navbar')
-                    .addClass('navbar-dark')
-                    .removeClass('navbar-light')
-                    .removeClass('bg-light');
+                    .removeClass('bg-dark');
                 }
             });
         });
